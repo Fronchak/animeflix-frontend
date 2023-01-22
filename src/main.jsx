@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Animes from './pages/Animes';
+import Animes, { loader as animesLoader } from './pages/Animes';
 import Home from './pages/Home';
 import Root from './pages/Root';
 import Error from './pages/Error';
@@ -18,7 +18,8 @@ const router = createBrowserRouter([
       },
       {
         path: "animes",
-        element: <Animes />
+        element: <Animes />,
+        loader: animesLoader
       }
     ]
   }
