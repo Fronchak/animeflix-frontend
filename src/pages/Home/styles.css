@@ -1,0 +1,8 @@
+#home-page-container a {
+  text-decoration: none;
+  transition: 1s;
+}
+
+#home-page-container a:hover {
+  text-decoration: underline;
+}

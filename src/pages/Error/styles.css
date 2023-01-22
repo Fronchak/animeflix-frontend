@@ -1,0 +1,22 @@
+#error-page-container h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+#error-page-container .row {
+  height: 70vh;
+}
+
+@media (min-width: 992px) {
+  #error-page-container h1 {
+    font-size: 6em;
+  }
+
+  #error-page-container p {
+    font-size: 1.6em;
+  }
+
+  #error-page-container .row {
+    height: 90vh;
+  }
+}
