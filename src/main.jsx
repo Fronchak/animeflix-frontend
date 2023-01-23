@@ -5,6 +5,8 @@ import Animes, { loader as animesLoader } from './pages/Animes';
 import Home from './pages/Home';
 import Root from './pages/Root';
 import Error from './pages/Error';
+import CardDetailsPage, { loader as cardDetailsLoader } from './pages/CardDetailsPage';
+import AnimeRegisterFormPage, { action as registerAnimeAction } from './pages/AnimeRegisterFormPage';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +22,16 @@ const router = createBrowserRouter([
         path: "animes",
         element: <Animes />,
         loader: animesLoader
+      },
+      {
+        path: "animes/:id",
+        element: <CardDetailsPage />,
+        loader: cardDetailsLoader
+      },
+      {
+        path: "animes/new",
+        element: <AnimeRegisterFormPage />,
+        action: registerAnimeAction
       }
     ]
   }

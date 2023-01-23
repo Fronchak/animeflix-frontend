@@ -1,0 +1,18 @@
+#card-details-first-column {
+  border-bottom: 1px solid #ccc;
+}
+
+#card-details:hover {
+  border-color: #000;
+}
+
+@media (min-width: 768px) {
+  #card-details-first-column {
+    border-right: 1px solid #ccc;
+    border-bottom: none;
+  }
+
+  #card-details img {
+    max-height: 60vh;
+  }
+}
